@@ -228,6 +228,7 @@ JOIN routes r ON s.route_id = r.route_id;
 -- ✅ Admin password is now hashed for login.php compatibility
 INSERT INTO users (full_name, email, phone, password, is_admin) VALUES
 ('Admin', 'admin@bus.com', '9999999999', '$2y$10$KzM8Yj4ZoqNgF4XK.DY9DuXAi7QqZpA1EhnUuqAzRLoV2FmjL/BlS', 1),
+('SuperAdmin', 'superadmin@bus.com', '1111111111', '$2y$10$PVps6AJKWuEj8Z2s1XYsM.q4ik4..uO.4QHBYp.IFOfwftB/2k8/q', 2),
 ('George', 'george@mail.com', '9876543210', '$2y$10$Eyzr1tR52RyCjKX8sajyT.N17y4Q9IBcNdtRZBp6bWhw5iFJ.1B7m', 0);
 
 INSERT INTO operators (operator_name, contact_email, contact_phone, address) VALUES
